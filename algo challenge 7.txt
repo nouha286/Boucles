@@ -1,0 +1,23 @@
+Algorithme suite_fabonacci
+variable U0=1,U1=1,Un,n,i:entier
+	
+Début	
+	ecrire("entrez le nombre de terme de la suite de Fibonacci ");
+	lire(n);
+	
+		pour i de 0 à n pas 1 faire
+		
+	si i<=1 alors
+		 
+		 	Un=1;
+	
+		 sinon
+		 	Un=U0+U1;
+		 	U0=U1;
+		 	U1=Un;
+		 Finsinon
+	Finsi	 
+		 
+		
+		écrire("la suite fibonacci de nombre",n,"est",Un);
+Fin

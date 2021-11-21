@@ -1,0 +1,33 @@
+Algorithme puissance_positif
+
+	Variable P,B,X,i:entier
+Début
+	ecrire("entrez la base de la puissance ")
+	Lire(B)
+	ecrire("entrez l'exposant de la puissance ")
+	Lire(X)
+	 
+	
+  Tant que (X<=0) ou (B<0) faire
+	
+		Si (X<=0) alors
+        
+            		écrire("Entrez un exposant supirieur a 0 ")
+           		 Lire(X)
+        	FinSi
+        Sinon Si B<0 alors
+        
+           	 écrire("Entrez une base n supirieur ou egal a 0 ")
+       		 Lire(B)
+        FinSi
+  FinTantque		
+	
+  Tant que (X>0) faire
+
+    P=pow(B,X)
+    ecrire(" %d a la puissance %d est %d \n",B,X,P)
+     X--	
+  FinTantque
+	
+	
+Fin

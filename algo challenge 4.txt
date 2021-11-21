@@ -1,0 +1,41 @@
+Algorithme somme_positif
+
+Variable N,somme,Max:entier
+
+
+Début
+	Max=0
+	somme=0
+	N=1
+	
+	ecrire("entrez une série de nombres inférieur à 100 et la terminez par la sisaie de nombre 0  ")
+	
+
+	
+	Tantque(N!=0)faire
+	
+		
+		Lire(N)
+		
+		Tantque(N>100) ou (N<0)
+		
+			ecrire("entrez des nombres positif inférieur à 100 ")
+			lire(N)
+		FinTantque	
+		
+		
+			somme=somme+N
+		
+	
+		Si(Max<N) alors
+		
+			Max=N;
+		FinSi
+		
+	
+	FinTantque
+	
+		printf("la somme est %d \n",somme);
+		printf("le maximum est %d",Max);
+		return 0;
+Fin
